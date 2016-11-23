@@ -14,9 +14,10 @@ If `browse` doesn't launch your browser, manually open [http://localhost:8080/](
 http://stackoverflow.com/questions/30492623/using-both-python-2-x-and-python-3-x-in-ipython-notebook
 The Details
 
+
 Create this directory: mkdir -p ~/.ipython/kernels/python3
 Create this file ~/.ipython/kernels/python3/kernel.json with this content:
-
+```
 {
     "display_name": "IPython (Python 3)", 
     "language": "python", 
@@ -30,7 +31,7 @@ Create this file ~/.ipython/kernels/python3/kernel.json with this content:
         "name": "ipython"
     }
 }
-
+```
 Restart the notebook server.
 Select "Python 3" from the dropdown menu "New"
 Work with a Python 3 Notebook
