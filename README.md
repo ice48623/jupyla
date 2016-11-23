@@ -16,6 +16,7 @@ The Details
 
 
 Create this directory: mkdir -p ~/.ipython/kernels/python3
+
 Create this file ~/.ipython/kernels/python3/kernel.json with this content:
 ```
 {
@@ -33,14 +34,20 @@ Create this file ~/.ipython/kernels/python3/kernel.json with this content:
 }
 ```
 Restart the notebook server.
+
 Select "Python 3" from the dropdown menu "New"
+
 Work with a Python 3 Notebook
+
 Select "Python 2" from the dropdown menu "New"
+
 Work with a Python 2 Notebook
 
 Kernel Spec : do something like this
+
 https://github.com/dsblank/simple_kernel/blob/master/install_script.sh
 
+```
 #!/bin/bash
 
 mkdir -p ~/.ipython/kernels/jupyla/
@@ -56,3 +63,4 @@ CONTENT='{
 }'
 
 echo $CONTENT > ~/.ipython/kernels/jupyla/kernel.json
+```
