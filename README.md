@@ -43,6 +43,7 @@ https://github.com/dsblank/simple_kernel/blob/master/install_script.sh
 mkdir -p ~/.ipython/kernels/jupyla/
 
 START_SCRIPT_PATH="/Users/Nuch/Desktop/MUIC/OPL/Project/Branch/jupyla/src/main/scala/com/jupyla/webserver/"
+
 ## Change the above path to directory that contains Blog.scala
 PYTHON_PATH=$(which scala)
 CONTENT='{
@@ -50,4 +51,5 @@ CONTENT='{
                 "display_name": "Jupyla",
                 "language": "scala"
 }'
+
 echo $CONTENT > ~/.ipython/kernels/jupyla/kernel.json
