@@ -16,6 +16,7 @@ The Details
 
 Create this directory: mkdir -p ~/.ipython/kernels/python3
 Create this file ~/.ipython/kernels/python3/kernel.json with this content:
+
 {
     "display_name": "IPython (Python 3)", 
     "language": "python", 
@@ -29,10 +30,11 @@ Create this file ~/.ipython/kernels/python3/kernel.json with this content:
         "name": "ipython"
     }
 }
+
 Restart the notebook server.
-Select „Python 3“ from the dropdown menu „New“
+Select "Python 3" from the dropdown menu "New"
 Work with a Python 3 Notebook
-Select „Python 2“ from the dropdown menu „New“
+Select "Python 2" from the dropdown menu "New"
 Work with a Python 2 Notebook
 
 Kernel Spec : do something like this
