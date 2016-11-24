@@ -5,6 +5,9 @@
 *.swp
 *.out
 
+# virtualenv
+venv/
+
 # rails specific
 *.sqlite3
 config/database.yml

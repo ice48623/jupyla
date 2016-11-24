@@ -33,6 +33,6 @@ class Blog extends JupylaStack {
     }
   }
 }
-
+// /Users/Nuch/Desktop/MUIC/OPL/Project/Branch/jupyla/src/main/scala/com/jupyla/webserver
 
 }
