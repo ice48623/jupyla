@@ -1,8 +1,8 @@
 #!/bin/bash
 
-mkdir -p ~/.ipython/kernels/jupyla/
+mkdir -p ~/.local/share/jupyter/kernels/jupyla/
 
-START_SCRIPT_PATH="~/Desktop/MUIC/OPL/Project/Branch/jupyla/src/main/scala/com/jupyla/webserver/"
+START_SCRIPT_PATH="~/Desktop/jupyla/src/main/scala/com/jupyla/webserver/"
 
 ## Change the above path to directory that contains Blog.scala
 PYTHON_PATH=$(which scala)
@@ -12,4 +12,4 @@ CONTENT='{
                 "language": "scala"
 }'
 
-echo $CONTENT > ~/.ipython/kernels/jupyla/kernel.json
+echo $CONTENT > ~/.local/share/jupyter/kernels/jupyla/kernel.json

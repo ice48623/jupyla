@@ -12,6 +12,7 @@ object JupylaBuild extends Build {
   val Version = "0.1.0-SNAPSHOT"
   val ScalaVersion = "2.11.8"
   val ScalatraVersion = "2.3.1"
+  val jupyterKernelVersion = "0.4.0-RC1"
 
   lazy val project = Project (
     "jupyla",
@@ -29,13 +30,13 @@ object JupylaBuild extends Build {
         "org.scalatra" %% "scalatra-scalate" % ScalatraVersion,
         "org.scalatra" %% "scalatra-specs2" % ScalatraVersion % "test",
         "ch.qos.logback" % "logback-classic" % "1.1.5" % "runtime",
+        "org.jupyter-scala" %% "kernel-api" % jupyterKernelVersion,
         "org.eclipse.jetty" % "jetty-webapp" % "9.2.15.v20160210" % "container",
         "javax.servlet" % "javax.servlet-api" % "3.1.0" % "provided",
-<<<<<<< HEAD
-=======
-        // "org.zeromq" %% "zeromq-scala-binding" % "0.0.6"
->>>>>>> d1d1d02525452fb408e65a89e2366c3e431f5725
-        "org.zeromq" % "zeromq-scala-binding_2.11.0-M3" % "0.0.7"
+        "org.zeromq" % "zeromq-scala-binding_2.11.0-M3" % "0.0.7",
+        "org.jupyter-scala" % "kernel_2.11" % "0.4.0-RC1",
+        "org.jupyter-scala" % "kernel-protocol_2.11" % "0.4.0-RC1",
+        "com.github.alexarchambault.jupyter" % "scala-api_2.11.8" % "0.3.0-M3"
       ),
       scalateTemplateConfig in Compile <<= (sourceDirectory in Compile){ base =>
         Seq(
